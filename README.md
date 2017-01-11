@@ -6,6 +6,7 @@ Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescrip
 * [Webpack 2.x](https://webpack.js.org/)
   * [Hot Module Replacement (HMR)](https://webpack.js.org/guides/hmr-react/) using [React Hot Loader 3.x](https://github.com/gaearon/react-hot-loader)
 * [Typescript 2.x](https://www.typescriptlang.org/)
+ * [TSLint](https://palantir.github.io/tslint/)
 * [Babel](http://babeljs.io/)
 
 # Installation
@@ -13,12 +14,17 @@ Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescrip
 2. `npm install`
 
 # Usage
-```
-npm start
-```
+**General**
+
+`npm start`
+
 * Compiles the app
 * Starts a web server hosting the app @ `http://localhost:8080`
 * Watches for changes and injects them without reloading the browser
+
+**Other commands**
+
+`npm run lint` - Checks TypeScript code for readability, maintainability, and functionality errors.
 
 # Resources
 * [Webpack & Typescript](https://webpack.js.org/guides/webpack-and-typescript)
