@@ -26,9 +26,36 @@
     "lint": "npm run lint:ts && npm run lint:sass",
     "lint:ts": "tslint './src/**/*.ts*' --format=stylish --force",
     "lint:sass": "stylelint ./src/**/*.scss",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/config/jest/jest.preprocessor.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "testRegex": "/__tests__/.*\\.(ts|tsx)$",
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "globals": {
+      "DEVELOPMENT": false,
+      "FAKE_SERVER": false
+    }
   },
   "devDependencies": {
+    "@types/jest": "^16.0.3",
     "@types/node": "^7.0.0",
     "@types/react": "^15.0.0",
     "@types/react-dom": "^0.14.20",
@@ -40,9 +67,12 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-2": "^6.13.0",
     "css-loader": "^0.23.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^18.1.0",
     "node-sass": "^4.2.0",
     "postcss-loader": "^0.9.1",
     "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-hot-loader": "^3.0.0-beta.6",
     "sass-loader": "^4.1.1",
