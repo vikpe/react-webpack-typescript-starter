@@ -10,6 +10,7 @@ Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescrip
  * [TSLint](https://palantir.github.io/tslint/) (4.x) 
 * [Babel](http://babeljs.io/) (6.x)
 * [SASS](http://sass-lang.com/)
+  * [stylelint](http://stylelint.io/) (rules: [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard))
 
 ## Installation
 1. Clone/download repo
