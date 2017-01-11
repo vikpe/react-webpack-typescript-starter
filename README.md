@@ -1,5 +1,5 @@
 # React Webpack Typescript Starter
-Minimal development starter kit for React, Webpack, Typescript and Babel.
+Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescript and Babel.
 
 **Features**
 * [React](https://facebook.github.io/react/)
