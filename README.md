@@ -18,7 +18,7 @@ npm start
 ```
 * Compiles the app
 * Starts a web server hosting the app @ `http://localhost:8080`
-* Watches for changes and inject them without reloading the browser
+* Watches for changes and injects them without reloading the browser
 
 # Resources
 * [Webpack & Typescript](https://webpack.js.org/guides/webpack-and-typescript)
