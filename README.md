@@ -3,9 +3,9 @@ Minimal development starter kit for React, Webpack, Typescript and Babel.
 
 **Features**
 * [React](https://facebook.github.io/react/)
-* [Webpack 2](https://webpack.js.org/)
-  * [Hot Module Replacement (HMR)](https://webpack.js.org/guides/hmr-react/) using [React Hot Loader](https://github.com/gaearon/react-hot-loader)
-* [Typescript 2](https://www.typescriptlang.org/)
+* [Webpack 2.x](https://webpack.js.org/)
+  * [Hot Module Replacement (HMR)](https://webpack.js.org/guides/hmr-react/) using [React Hot Loader 3.x](https://github.com/gaearon/react-hot-loader)
+* [Typescript 2.x](https://www.typescriptlang.org/)
 * [Babel](http://babeljs.io/)
 
 # Installation
