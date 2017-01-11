@@ -2,18 +2,19 @@
 Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescript and Babel.
 
 **Features**
-* [React](https://facebook.github.io/react/)
-* [Webpack 2.x](https://webpack.js.org/)
-  * [Hot Module Replacement (HMR)](https://webpack.js.org/guides/hmr-react/) using [React Hot Loader 3.x](https://github.com/gaearon/react-hot-loader)
-* [Typescript 2.x](https://www.typescriptlang.org/)
- * [TSLint](https://palantir.github.io/tslint/)
-* [Babel](http://babeljs.io/)
+* [React](https://facebook.github.io/react/) (15.x)
+* [Webpack](https://webpack.js.org/) (2.x)
+  * [Hot Module Replacement (HMR)](https://webpack.js.org/guides/hmr-react/) using [React Hot Loader](https://github.com/gaearon/react-hot-loader) (3.x)
+* [Typescript](https://www.typescriptlang.org/) (2.x)
+ * Compiled using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader) (3.x)
+ * [TSLint](https://palantir.github.io/tslint/) (4.x)
+* [Babel](http://babeljs.io/) (6.x)
 
-# Installation
+## Installation
 1. Clone/download repo
 2. `npm install`
 
-# Usage
+## Usage
 **General**
 
 `npm start`
@@ -26,5 +27,6 @@ Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescrip
 
 `npm run lint` - Checks TypeScript code for readability, maintainability, and functionality errors.
 
-# Resources
+## Resources
+* [Create React App (by FaceBook)](https://github.com/facebookincubator/create-react-app) - Good starting point when learning React
 * [Webpack & Typescript](https://webpack.js.org/guides/webpack-and-typescript)
