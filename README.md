@@ -40,6 +40,7 @@ Minimal starter kit with hot module replacement for fast development.
 * `npm run lint` - Run Typescript and SASS linter
 * `npm run lint:ts` - Run Typescript linter
 * `npm run lint:sass` - Run SASS linter
+* `npm run test` - Run tests (Jest)
 
 ## Resources
 * [Create React App (by FaceBook)](https://github.com/facebookincubator/create-react-app) - Good starting point when learning React
