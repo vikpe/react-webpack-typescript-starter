@@ -1,19 +1,23 @@
 # React Webpack Typescript Starter
 Minimal starter kit with hot module replacement for fast development.
 
-**Features**
+**Main features**
 * [React](https://facebook.github.io/react/) (15.x)
 * [Webpack](https://webpack.js.org/) (2.x)
-  * [Hot Module Replacement (HMR)](https://webpack.js.org/guides/hmr-react/) using [React Hot Loader](https://github.com/gaearon/react-hot-loader) (3.x)
+* [Hot Module Replacement (HMR)](https://webpack.js.org/guides/hmr-react/) using [React Hot Loader](https://github.com/gaearon/react-hot-loader) (3.x)
 * [Typescript](https://www.typescriptlang.org/) (2.x)
- * Compiled using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader) (3.x)
- * [TSLint](https://palantir.github.io/tslint/) (4.x) 
 * [Babel](http://babeljs.io/) (6.x)
 * [SASS](http://sass-lang.com/)
-  * [stylelint](http://stylelint.io/) (rules: [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard))
-* [Jest](https://facebook.github.io/jest/)
+* [Jest](https://facebook.github.io/jest/) - Testing framework for React applications
+
+**Additional features**
+* Image loading using [Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader)
+* Typescript compiling using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader) (3.x)
+* Code quality (linting)
+  * Typescript - [TSLint](https://palantir.github.io/tslint/) (4.x)
+  * SASS/CSS - [stylelint](http://stylelint.io/) (rules: [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard))
   
-**TODO**
+## TODO
 * [ ] Build script
   * [ ] Asset revisioning / cache bursting
   * [ ] Image minification
