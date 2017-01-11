@@ -9,10 +9,10 @@ Minimal development starter kit for React, Webpack, Typescript and Babel.
 * [Babel](http://babeljs.io/)
 
 # Installation
-1. Clone repo and extract to folder of choice
+1. Clone/download repo
 2. `npm install`
 
-# Usage
+# Usage (compiles app, starts webserver)
 `npm start`
 
 Server will be running on `http://localhost:8080`
