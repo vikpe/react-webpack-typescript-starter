@@ -1,28 +1,34 @@
 {
   "name": "desktop",
   "version": "0.1.0",
-  "description": "React, Webpack, Typescript boilerplate",
+  "description": "Starter kit for React, Webpack (with Hot Module Replacement), Typescript and Babel.",
   "keywords": [
     "react",
     "webpack",
     "typescript",
+    "babel",
+    "hmr",
+    "starter",
     "boilerplate"
   ],
   "author": "Viktor Persson",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vikpe/foo.git"
+    "url": "git+https://github.com/vikpe/react-webpack-typescript-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/vikpe/foo/issues"
+    "url": "https://github.com/vikpe/react-webpack-typescript-starter/issues"
   },
-  "homepage": "https://github.com/vikpe/foo#readme",
+  "homepage": "https://github.com/vikpe/react-webpack-typescript-starter",
   "scripts": {
     "start": "webpack-dev-server"
   },
   "devDependencies": {
     "@types/node": "^7.0.0",
+    "@types/react": "^15.0.0",
+    "@types/react-dom": "^0.14.20",
+    "awesome-typescript-loader": "^3.0.0-beta.18",
     "babel": "^6.5.2",
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.4",
@@ -31,15 +37,14 @@
     "babel-preset-stage-2": "^6.13.0",
     "css-loader": "^0.23.1",
     "postcss-loader": "^0.9.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-hot-loader": "^3.0.0-beta.6",
     "style-loader": "^0.13.1",
+    "typescript": "^2.1.4",
     "webpack": "^2.1.0-beta.25",
     "webpack-dev-server": "^2.1.0-beta.0"
   },
   "dependencies": {
-    "@types/react": "^15.0.0",
-    "@types/react-dom": "^0.14.20",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
   }
 }
