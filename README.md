@@ -14,6 +14,7 @@ Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescrip
   
 **TODO**
 * [ ] Build script
+  * [ ] Asset revisioning / cache bursting
   * [ ] Image minification
 * [ ] Tests
   * [ ] Jest
