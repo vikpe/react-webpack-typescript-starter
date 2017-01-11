@@ -1,6 +1,6 @@
 import * as React from "react";
 
-require("!style!css!./App.css");
+require("!style-loader!css-loader!sass-loader!./App.scss");
 
 export interface AppProps {
 }

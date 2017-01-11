@@ -1,5 +1,5 @@
 # React Webpack Typescript Starter
-Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescript and Babel.
+Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescript, Babel and SASS.
 
 **Features**
 * [React](https://facebook.github.io/react/) (15.x)
@@ -7,8 +7,9 @@ Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescrip
   * [Hot Module Replacement (HMR)](https://webpack.js.org/guides/hmr-react/) using [React Hot Loader](https://github.com/gaearon/react-hot-loader) (3.x)
 * [Typescript](https://www.typescriptlang.org/) (2.x)
  * Compiled using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader) (3.x)
- * [TSLint](https://palantir.github.io/tslint/) (4.x)
+ * [TSLint](https://palantir.github.io/tslint/) (4.x) 
 * [Babel](http://babeljs.io/) (6.x)
+* [SASS](http://sass-lang.com/)
 
 ## Installation
 1. Clone/download repo
