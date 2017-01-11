@@ -1,26 +1,12 @@
 {
-  "name": "desktop",
+  "name": "React Webpack Typescript Starter",
   "version": "0.1.0",
   "description": "Starter kit for React, Webpack (with Hot Module Replacement), Typescript and Babel.",
-  "keywords": [
-    "react",
-    "webpack",
-    "typescript",
-    "babel",
-    "sass",
-    "hmr",
-    "starter",
-    "boilerplate"
-  ],
+  "keywords": ["react", "webpack", "typescript", "babel", "sass", "hmr", "starter", "boilerplate"],
   "author": "Viktor Persson",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vikpe/react-webpack-typescript-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/vikpe/react-webpack-typescript-starter/issues"
-  },
+  "repository": {"type": "git", "url": "git+https://github.com/vikpe/react-webpack-typescript-starter.git"},
+  "bugs": {"url": "https://github.com/vikpe/react-webpack-typescript-starter/issues"},
   "homepage": "https://github.com/vikpe/react-webpack-typescript-starter",
   "scripts": {
     "lint": "npm run lint:ts && npm run lint:sass",
@@ -28,31 +14,6 @@
     "lint:sass": "stylelint ./src/**/*.scss",
     "start": "webpack-dev-server",
     "test": "jest"
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "<rootDir>/config/jest/jest.preprocessor.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
-    ],
-    "testRegex": "/__tests__/.*\\.(ts|tsx)$",
-    "moduleDirectories": [
-      "node_modules"
-    ],
-    "moduleNameMapper": {
-      "^.+\\.(css|scss)$": "identity-obj-proxy"
-    },
-    "globals": {
-      "DEVELOPMENT": false,
-      "FAKE_SERVER": false
-    }
   },
   "devDependencies": {
     "@types/jest": "^16.0.3",
@@ -84,5 +45,26 @@
     "webpack": "^2.1.0-beta.28",
     "webpack-dev-server": "^2.1.0-beta.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "jest": {
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx"],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/config/jest/jest.preprocessor.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "testRegex": "/__tests__/.*\\.(ts|tsx)$",
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)$": "<rootDir>/test/mocks/fileMock.js",
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "globals": {
+      "DEVELOPMENT": false,
+      "FAKE_SERVER": false
+    }
+  }
 }
