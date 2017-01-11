@@ -11,6 +11,13 @@ Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescrip
 * [Babel](http://babeljs.io/) (6.x)
 * [SASS](http://sass-lang.com/)
   * [stylelint](http://stylelint.io/) (rules: [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard))
+  
+**TODO**
+* [ ] Build script
+  * [ ] Image minification
+* [ ] Tests
+  * [ ] Jest
+* [ ] React router
 
 ## Installation
 1. Clone/download repo
