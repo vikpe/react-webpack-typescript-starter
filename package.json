@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/vikpe/react-webpack-typescript-starter",
   "scripts": {
-    "lint": "npm run lint:scripts && npm run lint:styles",
-    "lint:scripts": "tslint './src/**/*.ts*' --format=stylish --force",
-    "lint:styles": "stylelint ./src/**/*.scss",
+    "lint": "npm run lint:ts && npm run lint:sass",
+    "lint:ts": "tslint './src/**/*.ts*' --format=stylish --force",
+    "lint:sass": "stylelint ./src/**/*.scss",
     "start": "webpack-dev-server"
   },
   "devDependencies": {

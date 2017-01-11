@@ -33,8 +33,9 @@ Minimal starter kit with React, Webpack (with Hot Module Replacement), Typescrip
 * Watches for changes and injects them without reloading the browser
 
 **Other commands**
-
-`npm run lint` - Checks TypeScript code for readability, maintainability, and functionality errors.
+* `npm run lint` - Run Typescript and SASS linter
+* `npm run lint:ts` - Run Typescript linter
+* `npm run lint:sass` - Run SASS linter
 
 ## Resources
 * [Create React App (by FaceBook)](https://github.com/facebookincubator/create-react-app) - Good starting point when learning React
