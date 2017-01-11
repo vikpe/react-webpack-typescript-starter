@@ -12,10 +12,13 @@ Minimal development starter kit for React, Webpack, Typescript and Babel.
 1. Clone/download repo
 2. `npm install`
 
-# Usage (compiles app, starts webserver)
-`npm start`
-
-Server will be running on `http://localhost:8080`
+# Usage
+```
+npm start
+```
+* Compiles the app
+* Starts a web server hosting the app @ `http://localhost:8080`
+* Watches for changes and inject them without reloading the browser
 
 # Resources
 * [Webpack & Typescript](https://webpack.js.org/guides/webpack-and-typescript)
