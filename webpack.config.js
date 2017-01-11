@@ -14,8 +14,8 @@ module.exports = {
     ],
     output:  {
         filename:   'bundle.js', // the output bundle
-        path:       resolve(__dirname, 'dist'),
-        publicPath: '/dist/' // necessary for HMR to know where to load the hot update chunks
+        path:       resolve(__dirname, 'public'),
+        publicPath: '/' // necessary for HMR to know where to load the hot update chunks
     },
 
     context: resolve(__dirname, 'src'),
@@ -23,8 +23,8 @@ module.exports = {
 
     devServer: {
         hot:         true, // enable HMR on the server
-        contentBase: resolve(__dirname, 'dist'), // match the output path
-        publicPath:  '/dist/' // match the output `publicPath`
+        contentBase: resolve(__dirname, 'public'), // match the output path
+        publicPath:  '/' // match the output `publicPath`
     },
 
     module: {
