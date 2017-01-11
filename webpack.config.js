@@ -34,13 +34,10 @@ module.exports = {
                 use:  "awesome-typescript-loader"
             },
             {
-                test: /\.js$/,
-                use:  "source-map-loader"
-            },
-            {
                 test:    /\.js$/,
                 use:     [
                     'babel-loader',
+                    'source-map-loader'
                 ],
                 exclude: /node_modules/
             },
