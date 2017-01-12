@@ -11,7 +11,7 @@ Minimal starter kit with hot module replacement for fast development.
 * [Jest](https://facebook.github.io/jest/) - Testing framework for React applications
 
 **Additional features**
-* Image loading using [Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader)
+* Image loading/minification using [Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader)
 * Typescript compiling using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader) (3.x)
 * Code quality (linting)
   * Typescript - [TSLint](https://palantir.github.io/tslint/) (4.x)
@@ -20,7 +20,6 @@ Minimal starter kit with hot module replacement for fast development.
 ## TODO
 * [ ] Build script
   * [ ] Asset revisioning / cache bursting
-  * [ ] Image minification
 * [ ] React router
 
 ## Installation
