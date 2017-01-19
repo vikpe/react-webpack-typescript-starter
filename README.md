@@ -17,11 +17,6 @@ Minimal starter kit with hot module replacement for fast development.
   * Typescript - [TSLint](https://palantir.github.io/tslint/) (4.x)
   * SASS/CSS - [stylelint](http://stylelint.io/) (rules: [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard))
   
-## TODO
-* [ ] Build script
-  * [ ] Asset revisioning / cache bursting
-* [ ] React router
-
 ## Installation
 1. Clone/download repo
 2. `npm install`
@@ -44,3 +39,8 @@ Minimal starter kit with hot module replacement for fast development.
 ## Resources
 * [Create React App (by FaceBook)](https://github.com/facebookincubator/create-react-app) - Good starting point when learning React
 * [Webpack & Typescript](https://webpack.js.org/guides/webpack-and-typescript)
+
+## TODO
+* [ ] Build script
+  * [ ] Asset revisioning / cache bursting
+* [ ] React router
