@@ -14,7 +14,7 @@ Minimal starter kit with hot module replacement for fast development.
 * Image loading/minification using [Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader)
 * Typescript compiling using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader) (3.x)
 * Code quality (linting)
-  * Typescript - [TSLint](https://palantir.github.io/tslint/) (4.x)
+  * Typescript - [TSLint](https://palantir.github.io/tslint/) (5.x)
   * SASS/CSS - [stylelint](http://stylelint.io/) (rules: [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard))
   
 ## Installation
