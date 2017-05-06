@@ -27,7 +27,7 @@
     "lint:ts": "tslint './src/**/*.ts*' --format=stylish --force",
     "lint:sass": "stylelint ./src/**/*.scss",
     "start": "webpack-dev-server",
-    "test": "jest --watch"
+    "test": "jest --watch --coverage"
   },
   "devDependencies": {
     "@types/jest": "^19.2.3",
