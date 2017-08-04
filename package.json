@@ -30,11 +30,11 @@
     "test": "jest --watch --coverage"
   },
   "devDependencies": {
-    "@types/jest": "^20.0.4",
-    "@types/node": "^8.0.15",
-    "@types/react": "^15.0.38",
-    "@types/react-dom": "^15.5.1",
-    "awesome-typescript-loader": "^3.2.1",
+    "@types/jest": "^20.0.6",
+    "@types/node": "^8.0.19",
+    "@types/react": "^16.0.0",
+    "@types/react-dom": "^15.5.2",
+    "awesome-typescript-loader": "^3.2.2",
     "babel": "^6.23.0",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
@@ -58,7 +58,7 @@
     "stylelint-webpack-plugin": "^0.9.0",
     "tslint": "^5.5.0",
     "typescript": "^2.4.2",
-    "webpack": "^3.3.0",
+    "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1"
   },
   "dependencies": {},
