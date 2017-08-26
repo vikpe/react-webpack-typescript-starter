@@ -35,7 +35,7 @@ Minimal starter kit with hot module replacement (HMR) for rapid development.
 * Build app (once)
 * App served @ `http://localhost:3000`
 
-##All commands
+## All commands
 
 Command | Description
 --- | ---
