@@ -23,10 +23,13 @@
   },
   "homepage": "https://github.com/vikpe/react-webpack-typescript-starter",
   "scripts": {
+    "build": "webpack -p --env=prod",
     "lint": "npm run lint:ts && npm run lint:sass",
     "lint:ts": "tslint './src/**/*.ts*' --format stylish --force",
     "lint:sass": "stylelint ./src/**/*.scss",
-    "start": "webpack-dev-server",
+    "start": "npm run start-dev",
+    "start-dev": "webpack-dev-server --config=webpack.config.dev.js",
+    "start-prod": "npm run build && node express.js",
     "test": "jest --watch --coverage"
   },
   "devDependencies": {
@@ -42,6 +45,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.5",
+    "express": "^4.15.4",
     "file-loader": "^0.11.2",
     "identity-obj-proxy": "^3.0.0",
     "image-webpack-loader": "^3.3.0",
@@ -60,7 +64,8 @@
     "tslint": "^5.7.0",
     "typescript": "^2.5.1",
     "webpack": "^3.5.5",
-    "webpack-dev-server": "^2.7.1"
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
   },
   "dependencies": {},
   "jest": {

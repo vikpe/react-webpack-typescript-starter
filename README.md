@@ -9,6 +9,7 @@ Minimal starter kit with hot module replacement for fast development.
 * [Babel](http://babeljs.io/) (6.x)
 * [SASS](http://sass-lang.com/)
 * [Jest](https://facebook.github.io/jest/) - Testing framework for React applications
+* Production build script
 
 **Additional features**
 * Image loading/minification using [Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader)
@@ -22,25 +23,20 @@ Minimal starter kit with hot module replacement for fast development.
 2. `npm install`
 
 ## Usage
-**General**
+**Development**
 
 `npm start`
 
 * Compiles the app
-* Starts a web server hosting the app @ `http://localhost:8080`
-* Watches for changes and injects them using hot module replacement (without reloading the browser)
+* Starts a web server and serve the app @ `http://localhost:8080`
+* Watches for changes and injects them using hot module replacement (HMR) - without reloading the browser.
+
+**Production**
+* `npm run build` - Build app to `/dist/bundle.min.js` 
+* `npm run start-prod` - Build _and_ serve app @ `http://localhost:3000`
 
 **Other commands**
+* `npm run test` - Run tests
 * `npm run lint` - Run Typescript and SASS linter
 * `npm run lint:ts` - Run Typescript linter
 * `npm run lint:sass` - Run SASS linter
-* `npm run test` - Run tests (Jest)
-
-## Resources
-* [Create React App (by FaceBook)](https://github.com/facebookincubator/create-react-app) - Good starting point when learning React
-* [Webpack & Typescript](https://webpack.js.org/guides/webpack-and-typescript)
-
-## TODO
-* [ ] Build script
-  * [ ] Asset revisioning / cache bursting
-* [ ] React router
