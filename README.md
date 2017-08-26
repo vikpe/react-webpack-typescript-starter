@@ -1,5 +1,5 @@
 # React Webpack Typescript Starter
-Minimal starter kit with hot module replacement for fast development.
+Minimal starter kit with hot module replacement (HMR) for rapid development.
 
 **Main features**
 * [React](https://facebook.github.io/react/) (15.x)
@@ -14,9 +14,7 @@ Minimal starter kit with hot module replacement for fast development.
 **Additional features**
 * Image loading/minification using [Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader)
 * Typescript compiling using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader) (3.x)
-* Code quality (linting)
-  * Typescript - [TSLint](https://palantir.github.io/tslint/) (5.x)
-  * SASS/CSS - [stylelint](http://stylelint.io/) (rules: [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard))
+* Code quality (linting) for Typescript and SASS/CSS.
   
 ## Installation
 1. Clone/download repo
@@ -25,18 +23,27 @@ Minimal starter kit with hot module replacement for fast development.
 ## Usage
 **Development**
 
-`npm start`
+`npm run start-dev`
 
-* Compiles the app
-* Starts a web server and serve the app @ `http://localhost:8080`
-* Watches for changes and injects them using hot module replacement (HMR) - without reloading the browser.
+* Build the app (continously) using hot module replacement
+* App served @ `http://localhost:8080` 
 
 **Production**
-* `npm run build` - Build app to `/dist/bundle.min.js` 
-* `npm run start-prod` - Build _and_ serve app @ `http://localhost:3000`
 
-**Other commands**
-* `npm run test` - Run tests
-* `npm run lint` - Run Typescript and SASS linter
-* `npm run lint:ts` - Run Typescript linter
-* `npm run lint:sass` - Run SASS linter
+`npm run start-prod`
+
+* Build app (once)
+* App served @ `http://localhost:3000`
+
+##All commands
+
+Command | Description
+--- | ---
+`npm run start-dev` | Build app (continously) and serve @ `http://localhost:8080` (development, **HMR enabled**)
+`npm run start-prod` | Build app (once) and serve @ `http://localhost:3000` (production, **HMR disabled**)
+`npm run build` | Build app to `/dist/bundle.min.js` 
+`npm run test` | Run tests
+`npm run lint` | Run Typescript and SASS linter
+`npm run lint:ts` | Run Typescript linter
+`npm run lint:sass` | Run SASS linter
+`npm run start` | (alias of `npm run start-dev`)
