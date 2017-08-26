@@ -5,7 +5,7 @@ Minimal starter kit with hot module replacement (HMR) for rapid development.
 * [React](https://facebook.github.io/react/) (15.x)
 * [Webpack](https://webpack.js.org/) (3.x)
 * [Typescript](https://www.typescriptlang.org/) (2.x)
-* [Hot Module Replacement (HMR)](https://webpack.js.org/guides/hmr-react/) using [React Hot Loader](https://github.com/gaearon/react-hot-loader) (3.x)
+* [Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/) using [React Hot Loader](https://github.com/gaearon/react-hot-loader) (3.x)
 * [Babel](http://babeljs.io/) (6.x)
 * [SASS](http://sass-lang.com/)
 * [Jest](https://facebook.github.io/jest/) - Testing framework for React applications
