@@ -8,7 +8,7 @@ const commonConfig = require('./webpack.config.common');
 module.exports = merge(commonConfig, {
   entry: './index.tsx',
   output: {
-    filename: 'bundle.dist.js',
+    filename: 'bundle.min.js',
     path: resolve(__dirname, 'dist'),
     publicPath: '/',
   },
