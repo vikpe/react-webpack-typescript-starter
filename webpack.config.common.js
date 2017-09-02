@@ -45,6 +45,10 @@ module.exports = {
     new CheckerPlugin(),
     new StyleLintPlugin(),
   ],
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM',
+  },
   performance: {
     hints: false,
   },
