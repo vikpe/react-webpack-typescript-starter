@@ -1,5 +1,4 @@
 const tsc       = require('typescript');
-const babelJest = require('babel-jest');
 const tsConfig  = require('./../../tsconfig.json');
 
 module.exports = {
@@ -15,20 +14,12 @@ module.exports = {
                     compilerOptions: tsConfig.compilerOptions,
                     fileName:        path
                 }
-            );
-            src = src.outputText;
+            ).outputText;
 
             // update the path so babel can try and process the output
             path = path.substr(0, path.lastIndexOf('.')) + (isTs ? '.js' : '.jsx') || path;
         }
 
-        const isJsFile = (path.endsWith('.js') || path.endsWith('.jsx'));
-
-        if ( isJsFile ) {
-            return babelJest.process(src, path);
-        }
-        else {
-            return src;
-        }
+        return src;
     },
 };
