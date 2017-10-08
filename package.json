@@ -23,12 +23,12 @@
   },
   "homepage": "https://github.com/vikpe/react-webpack-typescript-starter",
   "scripts": {
-    "build": "webpack -p --env=prod",
+    "build": "webpack -p --config=configs/webpack/prod.js",
     "lint": "npm run lint:ts && npm run lint:sass",
     "lint:ts": "tslint './src/**/*.ts*' --format stylish --force",
     "lint:sass": "stylelint ./src/**/*.scss",
     "start": "npm run start-dev",
-    "start-dev": "webpack-dev-server --config=webpack.config.dev.js",
+    "start-dev": "webpack-dev-server --config=configs/webpack/dev.js",
     "start-prod": "npm run build && node express.js",
     "test": "jest --watch --coverage"
   },
@@ -78,7 +78,7 @@
       "jsx"
     ],
     "transform": {
-      "^.+\\.(ts|tsx)$": "<rootDir>/config/jest/jest.preprocessor.js"
+      "^.+\\.(ts|tsx)$": "<rootDir>/configs/jest/jest.preprocessor.js"
     },
     "transformIgnorePatterns": [
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
@@ -89,7 +89,7 @@
     ],
     "moduleNameMapper": {
       "^.+\\.(css|scss)$": "identity-obj-proxy",
-      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/jest/fileMock.js"
+      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/configs/jest/fileMock.js"
     },
     "globals": {
       "DEVELOPMENT": false,

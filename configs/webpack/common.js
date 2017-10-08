@@ -1,14 +1,13 @@
 // shared config (dev and prod)
-const webpack         = require('webpack');
 const {resolve}       = require('path');
 const {CheckerPlugin} = require('awesome-typescript-loader');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   resolve: {
-    extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
-  context: resolve(__dirname, 'src'),
+  context: resolve(__dirname, '../../src'),
   module: {
     rules: [
       {

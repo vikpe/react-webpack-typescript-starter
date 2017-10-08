@@ -1,9 +1,10 @@
 // development config
-const merge     = require('webpack-merge');
-const webpack   = require('webpack');
-const {resolve} = require('path');
-
-const commonConfig = require('./webpack.config.common');
+const merge        = require('webpack-merge');
+const webpack      = require('webpack');
+const {resolve}    = require('path');
+const commonConfig = require('./common');
+const outputPath   = resolve(__dirname, '../../public');
+const publicPath   = '/';
 
 module.exports = merge(commonConfig, {
   entry: [
@@ -14,13 +15,13 @@ module.exports = merge(commonConfig, {
   ],
   output: {
     filename: 'bundle.js',
-    path: resolve(__dirname, 'public'),
-    publicPath: '/' // necessary for HMR to know where to load the hot update chunks
+    path: outputPath,
+    publicPath: publicPath // necessary for HMR to know where to load the hot update chunks
   },
   devServer: {
     hot: true, // enable HMR on the server
-    contentBase: resolve(__dirname, 'public'), // match the output path
-    publicPath: '/' // match the output `publicPath`
+    contentBase: outputPath,
+    publicPath: publicPath
   },
   devtool: 'cheap-module-eval-source-map',
   plugins: [
