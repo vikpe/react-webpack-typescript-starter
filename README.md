@@ -1,7 +1,7 @@
 # React Webpack Typescript Starter
 Minimal starter kit with hot module replacement (HMR) for rapid development.
 
-* **[React](https://facebook.github.io/react/)** (15.x)
+* **[React](https://facebook.github.io/react/)** (16.x)
 * **[Webpack](https://webpack.js.org/)** (3.x)
 * **[Typescript](https://www.typescriptlang.org/)** (2.x)
 * **[Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/)** using [React Hot Loader](https://github.com/gaearon/react-hot-loader) (3.x)
