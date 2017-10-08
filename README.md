@@ -46,3 +46,7 @@ Command | Description
 `npm run lint:ts` | Run Typescript linter
 `npm run lint:sass` | Run SASS linter
 `npm run start` | (alias of `npm run start-dev`)
+
+## See also
+* [React Webpack Babel Starter](https://github.com/vikpe/react-webpack-babel-starter)
+* [Isomorphic Webapp Starter](https://github.com/vikpe/isomorphic-webapp-starter)
