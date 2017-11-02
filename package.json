@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/vikpe/react-webpack-typescript-starter",
   "scripts": {
-    "build": "webpack -p --config=configs/webpack/prod.js",
+    "build": "npm run clean-dist && webpack -p --config=configs/webpack/prod.js",
+    "clean-dist": "rm -f -r -d dist",
     "lint": "npm run lint:ts && npm run lint:sass",
     "lint:ts": "tslint './src/**/*.ts*' --format stylish --force",
     "lint:sass": "stylelint ./src/**/*.scss",
