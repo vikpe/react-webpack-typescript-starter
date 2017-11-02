@@ -47,6 +47,7 @@
     "css-loader": "^0.28.7",
     "express": "^4.16.2",
     "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
     "identity-obj-proxy": "^3.0.0",
     "image-webpack-loader": "^3.4.2",
     "jest": "^21.2.1",

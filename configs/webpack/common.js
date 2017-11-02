@@ -1,7 +1,8 @@
 // shared config (dev and prod)
-const {resolve}       = require('path');
-const {CheckerPlugin} = require('awesome-typescript-loader');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
+const {resolve}         = require('path');
+const {CheckerPlugin}   = require('awesome-typescript-loader');
+const StyleLintPlugin   = require('stylelint-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   resolve: {
@@ -43,6 +44,7 @@ module.exports = {
   plugins: [
     new CheckerPlugin(),
     new StyleLintPlugin(),
+    new HtmlWebpackPlugin({template: 'index.html.ejs',}),
   ],
   externals: {
     'react': 'React',

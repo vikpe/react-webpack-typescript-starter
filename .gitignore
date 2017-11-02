@@ -1,6 +1,5 @@
 node_modules/
-dist/*
-!dist/index.html
+dist/
 .idea/
 coverage/
 src/**/*.jsx
