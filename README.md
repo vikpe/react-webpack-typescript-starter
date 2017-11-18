@@ -40,7 +40,7 @@ Command | Description
 --- | ---
 `npm run start-dev` | Build app continously (HMR enabled) and serve @ `http://localhost:8080`
 `npm run start-prod` | Build app once (HMR disabled) and serve @ `http://localhost:3000`
-`npm run build` | Build app to `/dist/bundle.min.js` 
+`npm run build` | Build app to `/dist/` 
 `npm run test` | Run tests
 `npm run lint` | Run Typescript and SASS linter
 `npm run lint:ts` | Run Typescript linter
