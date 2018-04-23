@@ -18,6 +18,7 @@ module.exports = {
       },
       {
         test: /\.tsx?$/,
+        exclude: /node_modules/,
         use: ['babel-loader', 'awesome-typescript-loader'],
       },
       {
@@ -45,12 +46,11 @@ module.exports = {
   plugins: [
     new CheckerPlugin(),
     new StyleLintPlugin(),
-    new HtmlWebpackPlugin({template: 'index.html.ejs',}),
+    new HtmlWebpackPlugin({
+      template: 'index.html.ejs',
+      filename: 'index.html'
+    }),
   ],
-  externals: {
-    'react': 'React',
-    'react-dom': 'ReactDOM',
-  },
   performance: {
     hints: false,
   },
