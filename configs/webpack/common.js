@@ -1,14 +1,12 @@
 // shared config (dev and prod)
-const {resolve} = require('path');
 const {CheckerPlugin} = require('awesome-typescript-loader');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+module.exports = context =>({
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
-  context: resolve(__dirname, '../../src'),
+  context: context,
   module: {
     rules: [
       {
@@ -46,12 +44,8 @@ module.exports = {
   plugins: [
     new CheckerPlugin(),
     new StyleLintPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'index.html.ejs',
-      filename: 'index.html'
-    }),
   ],
   performance: {
     hints: false,
   },
-};
+})
