@@ -28,7 +28,7 @@
     "lint": "npm run lint:ts && npm run lint:sass",
     "lint:ts": "tslint './src/**/*.ts*' --format stylish --force",
     "lint:sass": "stylelint ./src/**/*.scss",
-    "start": "concurrently --raw 'npm run clean-dist && npm run start-dev' 'npm run server:dev'",
+    "start": "npm run clean-dist &&  concurrently --raw 'npm run start-dev' 'npm run server:dev'",
     "start-dev": "webpack-dev-server --config=tools/client-webpack/dev.js --open --open-page \"\"",
     "start-prod": "npm run build && node express.js",
     "server:dev": "webpack --config=tools/server-webpack/dev.js --watch && nodemon ./dist/main.js",
