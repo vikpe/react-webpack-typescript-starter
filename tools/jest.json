@@ -14,7 +14,7 @@
   },
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx"],
   "transform": {
-    "^.+\\.(ts|tsx)$": "<rootDir>/configs/jest.preprocessor.js"
+    "^.+\\.(ts|tsx)$": "<rootDir>/tools/jest.preprocessor.js"
   },
   "transformIgnorePatterns": [
     "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
