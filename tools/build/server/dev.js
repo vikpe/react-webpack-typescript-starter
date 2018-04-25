@@ -1,13 +1,13 @@
 // development config
 
-const {resolve} = require('path');
+const { resolve } = require('path');
 const merge = require('webpack-merge');
 const webpack = require('webpack');
 const common = require('./common');
 const nodeExternals = require('webpack-node-externals');
 
-const context=resolve(__dirname, '../../src/server');
-const dist = resolve(__dirname, './../../dist');
+const context = resolve(__dirname, '../../../src/server');
+const dist = resolve(__dirname, './../../../dist');
 
 module.exports = merge(common(context), {
   entry: [
@@ -25,7 +25,7 @@ module.exports = merge(common(context), {
     ],
     extensions: ['.js', '.ts', '.json'],
   },
-  mode:'development',
+  mode: 'development',
   externals: [nodeExternals()],
   node: {
     global: true,
@@ -33,5 +33,5 @@ module.exports = merge(common(context), {
     __filename: true,
     process: true,
     Buffer: true,
-  },  
+  },
 });
