@@ -33,10 +33,10 @@
     "build:server:watch": "webpack --config=tools/build/server/dev.js --watch",
     "start:server:watch": "nodemon ./dist/main.js",
     "client:dev": "webpack-dev-server --config=tools/build/client/dev.js",
-    "server:dev": "npm run build:server:watch && npm run start:server:watch",
+    "server:dev": "npm run build:server:watch & npm run start:server:watch",
     "start:dev": "npm run clean && concurrently --raw 'npm run client:dev' 'npm run server:dev'",
     "start": "node ./dist/main.js",
-    "test": "jest --watch --coverage --config=tools/jest.json"    
+    "test": "jest --watch --coverage --config=tools/jest.json"
   },
   "devDependencies": {
     "@types/jest": "^22.1.1",
@@ -57,6 +57,7 @@
     "image-webpack-loader": "^4.0.0",
     "jest": "^22.2.1",
     "node-sass": "^4.7.2",
+    "nodemon": "1.11.0",
     "postcss-loader": "^2.1.0",
     "react-addons-test-utils": "^15.6.2",
     "react-hot-loader": "^4.0.0-beta.22",

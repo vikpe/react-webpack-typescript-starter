@@ -1,0 +1,10 @@
+{
+    "verbose": true,
+    "legacyWatch": true,
+    "watch": [
+      "dist/main.js"
+    ],
+    "ignore": ["**/.*","**/coverage/*","**/dist/static/*","**/environment/*","**/node_modules/*",
+      "**/src/*","**/stories/*","**/tools/*","**/*.json","**/*.yml","**/*.log","**/*.config.js"
+    ]
+  }

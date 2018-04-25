@@ -1,8 +1,10 @@
 // shared config (dev and prod)
-module.exports = context =>({
-  target: 'node',
+const { CheckerPlugin } = require("awesome-typescript-loader");
+
+module.exports = context => ({
+  target: "node",
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    extensions: [".ts", ".tsx", ".js", ".jsx"]
   },
   context: context,
   module: {
@@ -12,7 +14,7 @@ module.exports = context =>({
         exclude: /node_modules/,
         use: [
           {
-            loader: 'babel-loader',
+            loader: "babel-loader",
             query: {
               cacheDirectory: true
             }
@@ -22,10 +24,9 @@ module.exports = context =>({
       {
         test: /\.ts?$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'awesome-typescript-loader'],
+        use: ["babel-loader", "awesome-typescript-loader"]
       }
-    ],
+    ]
   },
-  plugins: [
-  ]
-})
+  plugins: [new CheckerPlugin()]
+});

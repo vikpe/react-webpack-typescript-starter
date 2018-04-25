@@ -1,25 +1,26 @@
 // production config
-const { resolve } = require('path');
-const merge = require('webpack-merge');
-const webpack = require('webpack');
-const common = require('./common');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { resolve } = require("path");
+const merge = require("webpack-merge");
+const webpack = require("webpack");
+const common = require("./common");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const context = resolve(__dirname, '../../../src/client');
+const root = process.cwd();
+const context = resolve(root,"./src/client");
 
 module.exports = merge(common(context), {
-  entry: './index.tsx',
+  entry: "./index.tsx",
   output: {
-    filename: 'js/bundle.[hash].min.js',
-    path: resolve(__dirname, '../../../../dist'),
-    publicPath: '/',
+    filename: "[name].[hash].js",
+    path: resolve(root, "./dist/static/"),
+    publicPath: "/static/"
   },
   mode: "production",
-  devtool: 'source-map',
+  devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html.ejs',
-      filename: 'index.html',
-    }),
-  ],
+      template: "index.html.ejs",
+      filename: "./../index.html"
+    })
+  ]
 });

@@ -6,8 +6,8 @@ export interface IHelloClassProps { }
 
 class Dashboard extends React.Component<IHelloClassProps, {}> {
 
-  componentWillUpdate() {
-    window.fetch('/api/').then((data: any) => console.log(data.text()));
+  componentDidMount() {
+    window.fetch('/api').then((data: any) => console.log(data.text()));
   }
 
   render() {

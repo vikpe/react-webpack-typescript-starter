@@ -6,12 +6,13 @@ const webpack = require('webpack');
 const common = require('./common');
 const nodeExternals = require('webpack-node-externals');
 
-const context = resolve(__dirname, '../../../src/server');
-const dist = resolve(__dirname, './../../../dist');
+const root = process.cwd();
+const context = resolve(root,"./src/server");
+const dist = resolve(root, './dist');
 
 module.exports = merge(common(context), {
   entry: [
-    './express.ts' // the entry point of our app
+    './index.ts' // the entry point of our app
   ],
   output: {
     publicPath: resolve(__dirname),
