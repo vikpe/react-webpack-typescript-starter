@@ -33,7 +33,7 @@
     "test": "jest --watch --coverage --config=tools/jest.json",
     "client:dev": "webpack-dev-server --config=tools/build/client/dev.js",
     "server:dev": "webpack --config=tools/build/server/dev.js --watch && nodemon ./dist/main.js",
-    "start:dev": "npm run clean && concurrently --raw 'npm run client:dev' 'npm run server:dev'"
+    "start-dev": "npm run clean && concurrently --raw 'npm run client:dev' 'npm run server:dev'"
   },
   "devDependencies": {
     "@types/jest": "^22.1.1",
