@@ -32,7 +32,9 @@
     "build:prod": "npm run clean && concurrently --raw 'npm run build-client' 'npm run build-server'",
     "test": "jest --watch --coverage --config=tools/jest.json",
     "client:dev": "webpack-dev-server --config=tools/build/client/dev.js",
-    "server:dev": "webpack --config=tools/build/server/dev.js --watch && nodemon ./dist/main.js",
+    "build-dev-server:watch": "webpack --config=tools/build/server/dev.js --watch",
+    "start-dev-server:watch": "nodemon ./dist/main.js",
+    "server:dev": "npm run build-dev-server:watch && npm run start-dev-server:watch",
     "start-dev": "npm run clean && concurrently --raw 'npm run client:dev' 'npm run server:dev'"
   },
   "devDependencies": {
