@@ -1,14 +1,14 @@
-const express = require('express');
-const {resolve} = require('path');
+const express = require("express");
+const {resolve} = require("path");
 
 const app = express();
 const portNumber = 3000;
-const sourceDir = 'dist';
+const sourceDir = "dist";
 
-const indexPage=resolve(__dirname, './dist/index.html');
+const indexPage = resolve(__dirname, "./dist/index.html");
 app.use(express.static(sourceDir));
 
-app.get('*',(req,res,next)=>{
+app.get("*", (req, res, next) => {
   console.log(req.originalUrl);
   res.sendFile(indexPage);
 });

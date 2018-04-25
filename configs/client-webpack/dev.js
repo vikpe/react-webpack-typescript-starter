@@ -7,7 +7,7 @@ const common = require('./common');
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const context=resolve(__dirname, '../../src');
+const context=resolve(__dirname, '../../src/client');
 
 module.exports = merge(common(context), {
   entry: [
@@ -21,6 +21,7 @@ module.exports = merge(common(context), {
       }
     }
   },
+  mode:'development',
   devtool: 'inline-source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(), // enable HMR globally
