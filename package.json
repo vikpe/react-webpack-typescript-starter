@@ -23,16 +23,17 @@
   },
   "homepage": "https://github.com/vikpe/react-webpack-typescript-starter",
   "scripts": {
-    "build": "npm run clean-dist && webpack --config=tools/build/client/prod.js",
-    "clean-dist": "rm -f -r -d dist",
     "lint": "npm run lint:ts && npm run lint:sass",
     "lint:ts": "tslint './src/**/*.ts*' --format stylish --force",
     "lint:sass": "stylelint ./src/**/*.scss",
-    "start": "npm run clean-dist &&  concurrently --raw 'npm run start-dev' 'npm run server:dev'",
-    "start-dev": "webpack-dev-server --config=tools/build/client/dev.js --open --open-page \"\"",
-    "start-prod": "npm run build && node express.js",
+    "clean": "rm -rf dist",
+    "build-client": "webpack --config=tools/build/client/prod.js",
+    "build-server": "webpack --config=tools/build/server/prod.js",
+    "build:prod": "npm run clean && concurrently --raw 'npm run build-client' 'npm run build-server'",
+    "test": "jest --watch --coverage --config=tools/jest.json",
+    "client:dev": "webpack-dev-server --config=tools/build/client/dev.js",
     "server:dev": "webpack --config=tools/build/server/dev.js --watch && nodemon ./dist/main.js",
-    "test": "jest --watch --coverage --config=tools/jest.json"
+    "start:dev": "npm run clean && concurrently --raw 'npm run client:dev' 'npm run server:dev'"
   },
   "devDependencies": {
     "@types/jest": "^22.1.1",
