@@ -1,7 +1,7 @@
 {
   "presets": [
-    ["env", {"modules": false}],
-    "react"
+    ["@babel/preset-env", {"modules": false}],
+    "@babel/react"
   ],
   "plugins": [
     "react-hot-loader/babel"
@@ -9,9 +9,6 @@
   "env": {
     "production": {
       "presets": ["minify"]
-    },
-    "test": {
-      "presets": ["env", "react"]
     }
   }
 }
