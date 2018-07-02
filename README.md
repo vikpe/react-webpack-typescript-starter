@@ -22,7 +22,7 @@ Minimal starter kit with hot module replacement (HMR) for rapid development.
 
 `npm run start-dev`
 
-* Build app continously (HMR enabled)
+* Build app continuously (HMR enabled)
 * App served @ `http://localhost:8080` 
 
 **Production**
