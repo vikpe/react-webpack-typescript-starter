@@ -38,7 +38,7 @@ Minimal starter kit with hot module replacement (HMR) for rapid development.
 
 Command | Description
 --- | ---
-`npm run start-dev` | Build app continously (HMR enabled) and serve @ `http://localhost:8080`
+`npm run start-dev` | Build app continuously (HMR enabled) and serve @ `http://localhost:8080`
 `npm run start-prod` | Build app once (HMR disabled) and serve @ `http://localhost:3000`
 `npm run build` | Build app to `/dist/` 
 `npm run test` | Run tests
