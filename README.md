@@ -12,22 +12,22 @@ Minimal starter kit with hot module replacement (HMR) for rapid development.
 * Image loading/minification using [Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader)
 * Typescript compiling using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader) (5.x)
 * Code quality (linting) for Typescript and SASS/CSS.
-  
+
 ## Installation
 1. Clone/download repo
-2. `npm install`
+2. `yarn install` (or `npm install` for npm)
 
 ## Usage
 **Development**
 
-`npm run start-dev`
+`yarn run start-dev`
 
 * Build app continuously (HMR enabled)
-* App served @ `http://localhost:8080` 
+* App served @ `http://localhost:8080`
 
 **Production**
 
-`npm run start-prod`
+`yarn run start-prod`
 
 * Build app once (HMR disabled)
 * App served @ `http://localhost:3000`
@@ -38,14 +38,16 @@ Minimal starter kit with hot module replacement (HMR) for rapid development.
 
 Command | Description
 --- | ---
-`npm run start-dev` | Build app continuously (HMR enabled) and serve @ `http://localhost:8080`
-`npm run start-prod` | Build app once (HMR disabled) and serve @ `http://localhost:3000`
-`npm run build` | Build app to `/dist/` 
-`npm run test` | Run tests
-`npm run lint` | Run Typescript and SASS linter
-`npm run lint:ts` | Run Typescript linter
-`npm run lint:sass` | Run SASS linter
-`npm run start` | (alias of `npm run start-dev`)
+`yarn run start-dev` | Build app continuously (HMR enabled) and serve @ `http://localhost:8080`
+`yarn run start-prod` | Build app once (HMR disabled) and serve @ `http://localhost:3000`
+`yarn run build` | Build app to `/dist/`
+`yarn run test` | Run tests
+`yarn run lint` | Run Typescript and SASS linter
+`yarn run lint:ts` | Run Typescript linter
+`yarn run lint:sass` | Run SASS linter
+`yarn run start` | (alias of `yarn run start-dev`)
+
+**Note**: replace `yarn` with `npm` if you use npm.
 
 ## See also
 * [React Webpack Babel Starter](https://github.com/vikpe/react-webpack-babel-starter)
