@@ -22,14 +22,13 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', { loader: 'css-loader', options: { importLoaders: 1 } }, 'postcss-loader',],
+        use: ['style-loader', { loader: 'css-loader', options: { importLoaders: 1 } }],
       },
       {
         test: /\.scss$/,
         loaders: [
           'style-loader',
           { loader: 'css-loader', options: { importLoaders: 1 } },
-          'postcss-loader',
           'sass-loader',
         ],
       },

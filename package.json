@@ -51,7 +51,6 @@
     "image-webpack-loader": "^4.3.1",
     "jest": "^23.5.0",
     "node-sass": "^4.9.3",
-    "postcss-loader": "^3.0.0",
     "react": "^16.4.2",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.4.2",
@@ -70,6 +69,5 @@
     "webpack-dev-server": "^3.1.5",
     "webpack-merge": "^4.1.4"
   },
-  "dependencies": {},
-  "postcss": {}
+  "dependencies": {}
 }
