@@ -11,7 +11,7 @@
 * Production build script
 * Image loading/minification using [Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader)
 * Typescript compiling using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader) (5.x)
-* Code quality (linting) for Typescript and SASS/CSS.
+* Code quality (linting) for Typescript.
 
 ## Installation
 1. Clone/download repo
@@ -42,9 +42,7 @@ Command | Description
 `yarn run start-prod` | Build app once (HMR disabled) and serve @ `http://localhost:3000`
 `yarn run build` | Build app to `/dist/`
 `yarn run test` | Run tests
-`yarn run lint` | Run Typescript and SASS linter
-`yarn run lint:ts` | Run Typescript linter
-`yarn run lint:sass` | Run SASS linter
+`yarn run lint` | Run Typescript linter
 `yarn run start` | (alias of `yarn run start-dev`)
 
 **Note**: replace `yarn` with `npm` if you use npm.
