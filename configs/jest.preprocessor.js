@@ -8,16 +8,13 @@ module.exports = {
         const isTypescriptFile = (isTs || isTsx);
 
         if ( isTypescriptFile ) {
-            src = tsc.transpileModule(
+            return tsc.transpileModule(
                 src,
                 {
                     compilerOptions: tsConfig.compilerOptions,
                     fileName:        path
                 }
             ).outputText;
-
-            // update the path so babel can try and process the output
-            path = path.substr(0, path.lastIndexOf('.')) + (isTs ? '.js' : '.jsx') || path;
         }
 
         return src;
