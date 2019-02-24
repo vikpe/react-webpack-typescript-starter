@@ -50,7 +50,6 @@
     "jest": "^24.1.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.2",
-    "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.8.2",
     "react-hot-loader": "^4.7.0",
     "sass-loader": "^7.1.0",
