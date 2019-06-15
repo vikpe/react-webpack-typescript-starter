@@ -1,4 +1,5 @@
 import * as React from "react";
+import { hot } from "react-hot-loader";
 import "./../assets/scss/App.scss";
 
 const reactLogo = require("./../assets/img/react_logo.svg");
@@ -6,7 +7,7 @@ const reactLogo = require("./../assets/img/react_logo.svg");
 export interface AppProps {
 }
 
-export default class App extends React.Component<AppProps, undefined> {
+class App extends React.Component<AppProps, undefined> {
     render() {
         return (
             <div className="app">
@@ -17,3 +18,7 @@ export default class App extends React.Component<AppProps, undefined> {
         );
     }
 }
+
+declare let module: Object;
+
+export default hot(module)(App);
