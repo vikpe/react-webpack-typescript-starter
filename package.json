@@ -25,7 +25,7 @@
   "scripts": {
     "build": "yarn run clean-dist && webpack -p --config=configs/webpack/prod.js",
     "clean-dist": "rimraf dist/*",
-    "lint": "tslint './src/**/*.ts*' --format stylish --force",
+    "lint": "tslint './src/**/*.ts*' --format stylish --project . --force",
     "start": "yarn run start-dev",
     "start-dev": "webpack-dev-server --config=configs/webpack/dev.js",
     "start-prod": "yarn run build && node express.js",
