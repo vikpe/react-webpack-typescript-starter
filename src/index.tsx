@@ -6,5 +6,5 @@ const rootEl = document.getElementById("root");
 
 render(
     <App/>,
-    rootEl
+    rootEl,
 );
