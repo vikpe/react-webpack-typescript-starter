@@ -43,6 +43,7 @@ Command | Description
 `yarn run build` | Build app to `/dist/`
 `yarn run test` | Run tests
 `yarn run lint` | Run Typescript linter
+`yarn run lint --fix` | Run Typescript linter and fix issues
 `yarn run start` | (alias of `yarn run start-dev`)
 
 **Note**: replace `yarn` with `npm` if you use npm.
