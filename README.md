@@ -4,14 +4,12 @@
 * **[React](https://facebook.github.io/react/)** (16.x)
 * **[Webpack](https://webpack.js.org/)** (4.x)
 * **[Typescript](https://www.typescriptlang.org/)** (3.x)
-* **[Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/)** using [React Hot Loader](https://github.com/gaearon/react-hot-loader) (4.x)
-* [Babel](http://babeljs.io/) (7.x)
-* [SASS](http://sass-lang.com/)
-* [Jest](https://facebook.github.io/jest/) - Testing framework for React applications
-* Production build script
-* Image loading/minification using [Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader)
-* Typescript compiling using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader) (5.x)
-* Code quality (linting) for Typescript.
+* **[Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/)** ([React Hot Loader](https://github.com/gaearon/react-hot-loader))
+* Production build script (Webpack)
+* Image loading/minification ([Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader))
+* [SASS](http://sass-lang.com/) support
+* Code linting ([ESLint](https://github.com/eslint/eslint)) and formatting ([Prettier](https://github.com/prettier/prettier))
+* Test framework ([Jest](https://facebook.github.io/jest/))
 
 ## Installation
 1. Clone/download repo
@@ -42,8 +40,8 @@ Command | Description
 `yarn run start-prod` | Build app once (HMR disabled) to `/dist/` and serve @ `http://localhost:3000`
 `yarn run build` | Build app to `/dist/`
 `yarn run test` | Run tests
-`yarn run lint` | Run Typescript linter
-`yarn run lint --fix` | Run Typescript linter and fix issues
+`yarn run lint` | Run linter
+`yarn run lint --fix` | Run linter and fix issues
 `yarn run start` | (alias of `yarn run start-dev`)
 
 **Note**: replace `yarn` with `npm` in `package.json` if you use npm.
