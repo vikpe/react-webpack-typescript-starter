@@ -52,7 +52,7 @@
     "express": "^4.17.1",
     "file-loader": "^6.1.1",
     "html-webpack-plugin": "^4.5.0",
-    "image-webpack-loader": "^6.0.0",
+    "image-webpack-loader": "^7.0.1",
     "jest": "^26.5.3",
     "node-sass": "^4.14.1",
     "prettier": "^2.1.2",
