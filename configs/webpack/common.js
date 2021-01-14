@@ -1,39 +1,34 @@
 // shared config (dev and prod)
 const {resolve} = require('path');
-const {CheckerPlugin} = require('awesome-typescript-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   context: resolve(__dirname, '../../src'),
   module: {
     rules: [
       {
-        test: /\.js$/,
-        use: ['babel-loader', 'source-map-loader'],
+        test: [/\.jsx?$/, /\.tsx?$/],
+        use: ['babel-loader'],
         exclude: /node_modules/,
       },
       {
-        test: /\.tsx?$/,
-        use: ['babel-loader', 'awesome-typescript-loader'],
-      },
-      {
         test: /\.css$/,
-        use: ['style-loader', { loader: 'css-loader', options: { importLoaders: 1 } }],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(scss|sass)$/,
-        loaders: [
+        use: [
           'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          'css-loader',
           'sass-loader',
         ],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: [
+        use: [
           'file-loader?hash=sha512&digest=hex&name=img/[hash].[ext]',
           'image-webpack-loader?bypassOnDebug&optipng.optimizationLevel=7&gifsicle.interlaced=false',
         ],
@@ -41,7 +36,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new CheckerPlugin(),
     new HtmlWebpackPlugin({template: 'index.html.ejs',}),
   ],
   externals: {
