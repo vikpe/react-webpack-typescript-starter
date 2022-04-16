@@ -3,6 +3,7 @@ const { resolve } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  entry: "./index.tsx",
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
