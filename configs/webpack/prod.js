@@ -12,5 +12,8 @@ module.exports = merge(commonConfig, {
     publicPath: "/",
   },
   devtool: "source-map",
-  plugins: [],
+  externals: {
+    react: "React",
+    "react-dom": "ReactDOM",
+  },
 });

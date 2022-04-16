@@ -1,16 +1,10 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import * as TestUtils from 'react-dom/test-utils';
-import App from '../src/components/App';
+import * as React from "react";
+import { render, screen } from "@testing-library/react";
+import App from "../src/components/App";
 
-it('App is rendered', () => {
-    // Render App in the document
-    const appElement: App = TestUtils.renderIntoDocument(
-        <App/>
-    );
-
-    const appNode = ReactDOM.findDOMNode(appElement);
-
-    // Verify text content
-    expect(appNode.textContent).toEqual('Hello World!Foo to the barz');
+describe("App", () => {
+  test("should render", () => {
+    render(<App />);
+    expect(screen.getByText("Hello World!")).toBeTruthy();
+  });
 });
