@@ -7,7 +7,7 @@
 * **[Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/)** + [Fast Refresh](https://github.com/pmmmwh/react-refresh-webpack-plugin)
 * Image support ([Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader))
 * [SASS](http://sass-lang.com/) support
-* Production build script ([Webpack](https://webpack.js.org/))
+* Production build script
 * Code linting ([ESLint](https://github.com/eslint/eslint)) and formatting ([Prettier](https://github.com/prettier/prettier))
 * Test frameworks ([Jest](https://facebook.github.io/jest/) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro))
 
