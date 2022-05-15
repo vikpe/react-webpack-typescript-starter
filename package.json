@@ -56,7 +56,7 @@
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.1.0",
     "jest": "^27.5.1",
-    "node-sass": "^7.0.1",
+    "sass": "^1.45.2",
     "prettier": "^2.6.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
