@@ -48,5 +48,5 @@ Command | Description
 
 ## See also
 * [Create React App](https://github.com/facebook/create-react-app)
+* [Astro](https://astro.build/)
 * [Vite](https://vitejs.dev/)
-* [Parsel](https://parceljs.org/)
