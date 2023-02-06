@@ -1,3 +1,12 @@
+# DEPRECATED
+**This project is no longer maintained**, please consider using the following projects instead:
+
+* [**Vite**](https://vitejs.dev/)
+* [Parcel](https://parceljs.org/)
+* [Create React App](https://create-react-app.dev/)
+
+---
+
 # React Webpack Typescript Starter
 > Minimal starter with hot module replacement (HMR) for rapid development.
 
